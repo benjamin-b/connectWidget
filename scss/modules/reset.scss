@@ -1,0 +1,72 @@
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf * {
+  zoom: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul, ol {
+  //overflow: hidden;
+}
+
+header, main, footer,
+table, figure, blockquote, pre, ul, ol {
+  margin-bottom: 0;
+
+  p + & {
+    margin-top: 0;
+  }
+}
+
+picture {
+  display: block;
+}
+
+li ol, li ul {
+  margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+h1,h2, h3 {
+	//display: inline-block; this messes up the name in headers
+}
+
+input, button, textarea, select {
+  font: inherit;
+
+  appearance: none;
+
+  &:focus {
+  	appearance: none;
+  }
+}
+
+input[type=checkbox] {
+  appearance: checkbox;
+}
+
+input[type=radio] {
+  appearance: radio;
+}

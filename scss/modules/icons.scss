@@ -1,0 +1,14 @@
+.ls-icon{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  &.ls-video{
+    @include background-image-retina('/images/icon-activity-aw-video-call', png, 13px, 9px);
+  }
+  &.ls-icon-call{
+  	@include background-image-retina('/images/hang-call', png, 16px, 6px);	
+  }
+}

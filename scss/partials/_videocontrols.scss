@@ -1,0 +1,17 @@
+.lsvideo-controls{
+	background: rgba(34, 40, 48, 0.4);
+	border-radius: 100px 100px 0 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 215px;
+    height: 35px;
+    margin: auto;
+    text-align: center;
+    &>.icon{
+    	line-height: 35px;
+		margin: 0 12.5px;
+		cursor: pointer;
+    }
+}

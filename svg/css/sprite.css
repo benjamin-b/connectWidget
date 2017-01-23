@@ -1,0 +1,65 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../svg.svg");
+    background-repeat: no-repeat;
+    background-size: 1.8em 6.2em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../svg.png");
+}
+
+
+
+  .icon.lssvg-camera-disabled:before {
+      background-position: 0em 0em;
+      width: 1.8em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.lssvg-fullscreen:before {
+      background-position: 0em -1.5em;
+      width: 1.2em;
+      height: 1.2em;
+  }
+
+
+
+
+  .icon.lssvg-hang-call:before {
+      background-position: 0em -2.7em;
+      width: 1.6em;
+      height: 0.6em;
+  }
+
+
+
+
+  .icon.lssvg-mute-disabled:before {
+      background-position: 0em -3.3em;
+      width: 1.4em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.lssvg-screenshare:before {
+      background-position: 0em -4.8em;
+      width: 1.4em;
+      height: 1.4em;
+  }
+
+
+
+
+

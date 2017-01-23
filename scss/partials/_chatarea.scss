@@ -1,0 +1,19 @@
+.ls-chat-area{
+	display: none;
+	p{
+		&.ls-default-msg{
+			font-weight: 400;
+			font-size: 14px;
+			color: #39414D;
+			opacity: 0.2;
+			text-align: center;
+			margin: 15px 0;
+			cursor: default;
+			user-select : none;
+			-webkit-user-select: none;
+		}
+	}
+}
+.ls-chat-area{
+	margin-bottom: 70px;
+}

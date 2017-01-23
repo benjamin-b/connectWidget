@@ -1,0 +1,30 @@
+
+.ls{
+  &-btn{
+    border: 2px solid $white;
+    border-radius: 1px;
+    font-weight: 400;
+    font-size: 16px;
+    color: $white;
+    outline: 0;
+    cursor: pointer;
+    position: relative;
+    padding: 8.5px 18.6px;
+    &.ls{
+      &-btn-primary{
+        background-color: #1D7ADF;
+        border-radius: 100px 100px 74px 74px;
+        .ls-icon{
+          margin: 1px 5px 0 0;
+        }
+      }
+    }
+  }
+  &-send-btn{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: #1D7ADF;
+    cursor: pointer;
+  }
+}

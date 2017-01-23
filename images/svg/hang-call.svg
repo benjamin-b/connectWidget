@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="6px" viewBox="0 0 16 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>hang-call</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Final-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0-0" transform="translate(-1212.000000, -262.000000)" fill="#FFFFFF">
+            <g transform="translate(870.000000, 235.000000)" id="Intital-chat">
+                <g>
+                    <g id="Group-5" transform="translate(-2.000000, 0.000000)">
+                        <g id="hang-up-copy" transform="translate(337.000000, 15.000000)">
+                            <g id="icon-big-end-call-copy-2" transform="translate(7.000000, 12.000000)">
+                                <g id="Page-1" transform="translate(8.000000, 3.000000) rotate(-270.000000) translate(-8.000000, -3.000000) translate(5.000000, -5.000000)">
+                                    <path d="M6.00000117,13 C6.00000117,12.447 5.55300117,12 4.99900117,12 L3.99900117,12 C3.44700117,12 3.00000117,11.552 3.00000117,11 L3.00000117,5 C3.00000117,4.448 3.44700117,4 3.99900117,4 L4.99900117,4 C5.55200117,4 6.00000117,3.552 6.00000117,3 L6.00000117,1 C6.00000117,0.448 5.55300117,0 5.00000117,0 L2.49900117,0 C2.22300117,0 1.88600117,0.194 1.75900117,0.44 C0.638001172,2.598 -0.00099882805,5.447 1.17195035e-06,8 C-0.00099882805,10.552 0.638001172,13.402 1.76000117,15.561 C1.88700117,15.806 2.22400117,16 2.50100117,16 L5.00000117,16 C5.55300117,16 6.00000117,15.553 6.00000117,15 L6.00000117,13 Z" id="hang-call"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

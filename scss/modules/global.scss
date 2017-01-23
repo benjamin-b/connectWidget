@@ -1,0 +1,175 @@
+@import "animations";
+
+.ls-widget-wrapper{
+	position: fixed;
+	bottom: 20px;
+	right: 70px;
+	transition: right 1s;
+	&.animate{
+		right: 10px;
+		.ls-widget-content{
+			width: 380px;
+			height: 191px;
+			border-radius: 8px;
+			overflow: hidden;
+			.ls-widget-description{
+				.ls-profile-image{
+					width: 80px;
+					height: 80px;
+					right: 45px;
+					bottom: 100px;
+				}
+				.ls-welcome-content{
+					display: block;
+				}
+			}
+			.ls-agent-tooltip{
+				display: none;
+			}
+			.ls-widget-footer{
+				display: block;
+			}
+		}
+	}
+}
+
+.ls-widget-header{
+	width: 380px;
+	height: 60px;
+	background-color: #222830;
+	display: none;
+	&:after{
+		clear: both;
+		display: block;
+		content: "";
+	}
+	.ls-user-status, .ls-agent-name{
+		margin: 0 0 0 15px;
+	}
+}
+
+// Status
+.ls-user-status{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	&.available{
+		background-color: #78D700;
+	}
+}
+
+// Agent Name 
+.ls-agent-name{
+	font-weight: 500;
+	font-size: 16px;
+	color: #FFFFFF;
+	line-height: 60px;
+}
+
+// Header right controls
+.ls-header-right-controls{
+	float: right;
+	.ls-icon-call{
+		width: 30px;
+		height: 30px;
+		background-color: #FF6155;
+		border-radius: 50%;
+		margin: 15px 15px 15px 20px;
+	}
+}
+
+// Timer styles
+.ls-call-timer{
+	font-weight: 500;
+	font-size: 16px;
+	color: #FFFFFF;
+	line-height: 60px;
+}
+
+.ls-welcome-content{
+	display: none;
+	p{
+		font-weight: 400;
+		font-size: 16px;
+		color: #39414D;
+		line-height: 23px;
+		padding-left: 25px;
+		min-height: 71px;
+		.newLine{
+			display: block;
+		}
+		&:first-of-type{
+			padding-top: 25px;
+		}
+	}
+}
+.ls-widget-content{
+	position: relative;
+	width: 146px;
+	height: 40px;
+	background-color: $white;
+	border-radius: 0px 10px 0px 10px;
+	box-shadow: 0 5px 5px 0 rgba(206,219,250,0.45);
+	margin-right: 15px;
+	transition: width 1s, height 1s;
+	.ls-btn-primary{
+		margin: 15px 0 15px 25px;
+		display: none;
+	}
+}
+.ls-agent-tooltip{
+	font-weight: 500;
+	font-size: 14px;
+	color: #39414D;
+	text-align: center;
+	line-height: 40px;
+}
+.ls-profile-image{
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 2px solid $white;
+	background-color: #D8D8D8;
+	box-shadow: 0 5px 5px 0 rgba(207,219,251,0.45);
+	position: fixed;
+	right: 20px;
+	bottom: 15px;
+	transition: all 1s;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.ls-widget-textarea{
+	background-color: $white;
+	border: 0;
+	border-top: 1px solid rgba(56,65,77,0.14);
+	resize: none;
+	outline: 0;
+	padding: 15px 70px 0 25px;
+	font-weight: 400;
+	font-size: 14px;
+	color: #39414D;
+	width: 100%;
+	@include placeholder{
+		color: #39414D;
+		opacity: 0.6;
+	}
+}
+
+.ls-widget-footer{	
+	display: none;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	.ls-send-btn{
+		display: none;
+		position: absolute;
+		right: 25px;
+		top: 15px;
+	}
+}
