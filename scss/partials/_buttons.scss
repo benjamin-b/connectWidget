@@ -14,8 +14,10 @@
       &-btn-primary{
         background-color: #1D7ADF;
         border-radius: 100px 100px 74px 74px;
-        .ls-icon{
-          margin: 1px 5px 0 0;
+        .ls-icon, .icon{
+          margin: 2px 5px 0 0;
+          display: inline-block;
+          vertical-align: top;
         }
       }
     }

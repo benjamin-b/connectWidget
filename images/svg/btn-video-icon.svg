@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="13px" viewBox="0 0 17 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>btn-video-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0.997544646 C0,0.446615951 0.446311399,0 0.997544646,0 L8.00245535,0 C8.55338405,0 9,0.446311399 9,0.997544646 L9,8.00245535 C9,8.55338405 8.5536886,9 8.00245535,9 L0.997544646,9 C0.446615951,9 0,8.5536886 0,8.00245535 L0,0.997544646 Z M13,2 L13,7 L11,5.99497819 L11,3.12443912 L13,2 Z M1.13067902,2.08955173 C1.13067902,2.08955173 0.503285447,3.04828648 1.77622542,4.86080872 C3.0491654,6.67333097 4.58685479,7.45099321 4.58685479,7.45099321 C4.58685479,7.45099321 6.20637523,8.43689659 7.27088562,7.70253701 C7.27088562,7.70253701 7.9620568,7.73612467 7.97442072,6.27130585 C7.80172964,5.34806597 7.48614013,5.13967817 6.6720702,4.6887198 C5.97094709,4.53743473 5.27798765,4.6303279 5.27798765,5.84174852 C3.542694,4.6303279 3.11631649,3.79731326 3.11631649,3.79731326 C3.11631649,3.79731326 4.3184213,4.1039949 4.33978956,2.76656012 C4.03066966,1.70894516 3.45654848,1.4929686 2.98195316,1.10709666 C1.60963272,0.819007267 1.13067902,2.08955173 1.13067902,2.08955173 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="17" height="13">
+            <rect x="-2" y="-2" width="17" height="13" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Final-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="c-2" transform="translate(-988.000000, -326.000000)" stroke="#FFFFFF" stroke-width="4">
+            <g transform="translate(870.000000, 235.000000)" id="Intital-chat">
+                <g>
+                    <g id="Send-button" transform="translate(100.000000, 77.000000)">
+                        <g id="Group-4" transform="translate(20.000000, 11.000000)">
+                            <g id="activity/aw/icon-activity-aw-video-call-with" transform="translate(0.000000, 5.000000)">
+                                <use id="btn-video-icon" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

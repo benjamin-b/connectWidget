@@ -27,8 +27,26 @@
 				display: none;
 			}
 			.ls-widget-footer{
-				display: block;
+			display: block;
 			}
+		}
+	}
+	&.ls-enable-video{
+		.ls-widget-content{
+			.ls-widget-description{
+				.ls-welcome-content{
+					display: none;
+				}
+			}
+		}
+		.ls-profile-image{
+			display: none;
+		}
+		.ls-chat-area{
+			display: block;
+		}
+		.ls-video-container{
+			display: block;
 		}
 	}
 }
