@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="15px" viewBox="0 0 17 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>chat-bubble</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.994587249,7.76095772 C0.980192295,5.47908587 0.994152013,1.99097869 0.994152013,1.99097869 C0.997381761,0.891391524 1.90017616,1.81668206e-13 2.99201701,1.59088471e-13 L10.007983,1.39952985e-14 C11.1081436,-8.75649294e-15 12,0.890377778 12,2.00742055 L11.9999999,6.93752574 C11.9999998,8.0461935 11.1073155,8.95436354 9.99140645,8.96613567 L4.71989054,9.02174679 C4.71989054,9.02174679 2.51296757,11.1917208 0,10.9999998 C1.15103726,9.38186369 0.818121799,9.30620979 0.994587249,7.76095772 Z M2.99999999,3 C2.99999999,2.44771525 3.43788134,2 4.00292932,2 L8.99707066,2 C9.55097323,2 9.99999999,2.44386482 9.99999999,3 C9.99999999,3.55228475 9.56211864,4 8.99707066,4 L4.00292932,4 C3.44902674,4 2.99999999,3.55613518 2.99999999,3 Z M2.99999999,6 C2.99999999,5.44771525 3.44371663,5 3.99980748,5 L7.0001925,5 C7.55237093,5 7.99999999,5.44386482 7.99999999,6 C7.99999999,6.55228475 7.55628334,7 7.0001925,7 L3.99980748,7 C3.44762905,7 2.99999999,6.55613518 2.99999999,6 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="16" height="15.0119949">
+            <rect x="-2" y="-2" width="16" height="15.0119949" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Final-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.400000006" stroke-linejoin="round">
+        <g id="1-1" transform="translate(-1092.000000, -569.000000)" stroke="#FFFFFF" stroke-width="4">
+            <g transform="translate(870.000000, 235.000000)" id="Intital-chat">
+                <g>
+                    <g id="Group-8" transform="translate(0.000000, 59.000000)">
+                        <g id="Call-controls" transform="translate(83.000000, 265.000000)">
+                            <g id="call-actions">
+                                <g id="Group-5" transform="translate(21.000000, 10.000000)">
+                                    <g id="chat" transform="translate(120.000000, 2.000000)">
+                                        <g id="Group-7" transform="translate(0.750000, 0.000000)">
+                                            <use id="chat-bubble" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

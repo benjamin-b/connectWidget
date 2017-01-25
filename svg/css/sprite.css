@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../svg.svg");
     background-repeat: no-repeat;
-    background-size: 1.8em 7.5em;
+    background-size: 1.8em 16.1em;
 }
 
 .no-svg .icon:before {
@@ -35,8 +35,44 @@
 
 
 
-  .icon.lssvg-fullscreen:before {
+  .icon.lssvg-camera-disabled-hover:before {
       background-position: 0em -2.8em;
+      width: 1.8em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.lssvg-chat-bubble:before {
+      background-position: 0em -4.3em;
+      width: 1.7em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.lssvg-chat-bubble-hover:before {
+      background-position: 0em -5.8em;
+      width: 1.7em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.lssvg-fullscreen:before {
+      background-position: 0em -7.3em;
+      width: 1.2em;
+      height: 1.2em;
+  }
+
+
+
+
+  .icon.lssvg-fullscreen-hover:before {
+      background-position: 0em -8.5em;
       width: 1.2em;
       height: 1.2em;
   }
@@ -45,7 +81,7 @@
 
 
   .icon.lssvg-hang-call:before {
-      background-position: 0em -4em;
+      background-position: 0em -9.7em;
       width: 1.6em;
       height: 0.6em;
   }
@@ -54,7 +90,16 @@
 
 
   .icon.lssvg-mute-disabled:before {
-      background-position: 0em -4.6em;
+      background-position: 0em -10.3em;
+      width: 1.4em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.lssvg-mute-disabled-hover:before {
+      background-position: 0em -11.8em;
       width: 1.4em;
       height: 1.5em;
   }
@@ -63,7 +108,16 @@
 
 
   .icon.lssvg-screenshare:before {
-      background-position: 0em -6.1em;
+      background-position: 0em -13.3em;
+      width: 1.4em;
+      height: 1.4em;
+  }
+
+
+
+
+  .icon.lssvg-screenshare-hover:before {
+      background-position: 0em -14.7em;
       width: 1.4em;
       height: 1.4em;
   }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>camera-disabled-hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Final-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="c-0-1" transform="translate(-1012.000000, -399.000000)" fill="#FFFFFF">
+            <g transform="translate(870.000000, 65.000000)" id="Intital-chat">
+                <g>
+                    <g id="Group-8" transform="translate(0.000000, 59.000000)">
+                        <g id="Call-controls" transform="translate(83.000000, 265.000000)">
+                            <g id="call-actions">
+                                <g id="Group-5" transform="translate(21.000000, 10.000000)">
+                                    <g id="icon-disable-video" transform="translate(38.000000, 0.000000)">
+                                        <g id="cam-icon">
+                                            <path d="M11.4960498,2 L4,2 C2.8954305,2 2,2.8954305 2,4 L2,11 C2,11.1533468 2.01725819,11.3026628 2.04993824,11.4461115 L0.705660835,12.7903889 C0.311970302,13.1840795 0.309867369,13.820275 0.707106781,14.2175144 C1.10159589,14.6120035 1.7402449,14.6129477 2.13423226,14.2189604 L14.1435816,2.20961106 C14.5372721,1.81592053 14.539375,1.17972499 14.1421356,0.782485579 C13.7476465,0.387996472 13.1089975,0.387052269 12.7150101,0.781039633 L11.4960498,2 Z M4,9.49604977 L4,4 L9.49604977,4 L4,9.49604977 Z M15.1807359,3.17046253 C16.4300078,2.60087224 18,3.48221037 18,4.99999999 L18,10 C18,11.7354779 15.941054,12.64734 14.6559127,11.481023 L14,10.8857562 L14,11 C14,12.1045695 13.1045695,13 12,13 L5.35319263,13 L7.35319263,11 L12,11 L12,6.35319263 L15.1435816,3.20961106 C15.1563803,3.19681233 15.1687652,3.18375731 15.1807359,3.17046253 Z M16,4.99999999 L14,6.89060464 L14,8.1849204 L16,10 L16,4.99999999 Z" id="camera-disabled-hover"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

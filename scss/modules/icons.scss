@@ -12,3 +12,29 @@
   	@include background-image-retina('/images/hang-call', png, 16px, 6px);	
   }
 }
+
+
+.icon{
+  &:hover, &.active{
+    &.lssvg-mute-disabled{  
+      &:before{
+        background-position: 0em -8.8em;
+      }
+    }
+    &.lssvg-camera-disabled{
+      &:before{
+        background-position: 0em -2.8em;
+      }
+    }
+    &.lssvg-screenshare{
+      &:before{
+        background-position: 0em -11.7em;
+      }
+    }
+    &.lssvg-fullscreen{
+      &:before{
+        background-position: 0em -5.5em;
+      }
+    }
+  }
+}

@@ -13,7 +13,6 @@ gulp.task('webserver', function() {
     });
 });
 gulp.task('sprites', function () {
-  console.log("Im in");
     return gulp.src('images/svg/*.svg')
         .pipe(svgSprite({
             selector: "lssvg-%f",

@@ -86,9 +86,26 @@ var loginPage = (function(w, d){
         widgetContent.style.height = 'auto';
     }
 
+    // Handling the video contols
+    var handleVideoControls = function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        var target      = event.target,
+            classList   = target.classList;
+        if(target.nodeName=='I'){
+            if(target.classList.contains('active'))
+                target.classList.remove('active');
+            else
+                target.classList.add('active');
+        }
+    };
+
     var bindEvents = function() {
         if(videoCallBtn){
             videoCallBtn.addEventListener('click', handleVideoCallBtnClick);
+        }
+        if(widgetWrapper){
+            widgetWrapper.addEventListener('click', handleVideoControls);
         }
     };
     bindEvents();

@@ -1,5 +1,12 @@
 @import "animations";
 
+%clearFix{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+
 .ls-widget-wrapper{
 	position: fixed;
 	bottom: 20px;
@@ -42,6 +49,9 @@
 		.ls-profile-image{
 			display: none;
 		}
+		.ls-widget-header{
+			display: block;
+		}
 		.ls-chat-area{
 			display: block;
 		}
@@ -57,9 +67,7 @@
 	background-color: #222830;
 	display: none;
 	&:after{
-		clear: both;
-		display: block;
-		content: "";
+		@extend %clearFix;
 	}
 	.ls-user-status, .ls-agent-name{
 		margin: 0 0 0 15px;
@@ -83,6 +91,7 @@
 	font-size: 16px;
 	color: #FFFFFF;
 	line-height: 60px;
+	cursor: auto;
 }
 
 // Header right controls
@@ -94,6 +103,12 @@
 		background-color: #FF6155;
 		border-radius: 50%;
 		margin: 15px 15px 15px 20px;
+	    display: inline-block;
+	    vertical-align: top;
+	    text-align: center;
+	    .icon{
+	    	line-height: 25px;
+	    }
 	}
 }
 
