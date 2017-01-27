@@ -26,7 +26,6 @@ gulp.task('sprite', function () {
                     dest : '../index.html'
                 },
                 prefix : ".lssvg-",
-
                 render : {
                     css     : {
                         dest : 'sprite.css',
@@ -52,6 +51,7 @@ gulp.task('sprite', function () {
 //         }))
 //         .pipe(gulp.dest("./svg/"));
 // });
+
 gulp.task('sass', function () {
   gulp.src('./scss/main.scss')
     .pipe(sass().on('error', sass.logError))
