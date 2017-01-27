@@ -1,422 +1,222 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta http-equiv="cache-control" content="max-age=0"/>
-    <meta http-equiv="cache-control" content="no-cache"/>
-    <meta http-equiv="expires" content="0"/>
-    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
-    <meta http-equiv="pragma" content="no-cache"/>
-    <title>Icon kit preview | gulp-svg-sprites</title>
-    <link href="css/sprite.css" rel="stylesheet" type="text/css" media="all"/>
-    <style type="text/css">@CHARSET "UTF-8";
-    * {
-        box-sizing: border-box;
-    }
-    body {
-        padding: 0;
-        margin: 0;
-        color: #666;
-        background: #fafafa;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1em;
-        line-height: 1.4
-    }
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<title>SVG CSS sprite preview | svg-sprite</title>
+		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
+		<style>i{text-indent:200%;white-space:nowrap;overflow:hidden;display:inline-block;background-size:67px 43px!important}</style>
 
-    header {
-        display: block;
-        padding: 3em 3em 2em 3em;
-        background-color: #fff
-    }
+<!--
 
-    header p {
-        margin: 0 0 0 0;
-    }
+Sprite CSS
+====================================================================================================
+This is an all-in-one inline version of the CSS necessary to use the SVG sprite.
 
-    nav {
-        font-size: .7em;
-        display: block;
-        width: 100%;
-        margin: 0 0 2em 0
-    }
+-->
 
-    nav a {
-        display: inline-block;
-        text-decoration: none;
-        margin-left: 2em;
-        color: #0f7595;
-        white-space: nowrap
-    }
+<style type="text/css">
+.lssvg-btn-video-icon {
+	background: url("svg.svg") 0 50% no-repeat;
+	width: 17px;
+	height: 13px;
+}
+.lssvg-camera-disabled {
+	background: url("svg.svg") 36.734693877551024% 0 no-repeat;
+	width: 18px;
+	height: 15px;
+}
+.lssvg-camera-disabled-hover {
+	background: url("svg.svg") 0 0 no-repeat;
+	width: 18px;
+	height: 15px;
+}
+.lssvg-chat-bubble {
+	background: url("svg.svg") 72% 0 no-repeat;
+	width: 17px;
+	height: 15px;
+}
+.lssvg-chat-bubble-hover {
+	background: url("svg.svg") 0 100% no-repeat;
+	width: 17px;
+	height: 15px;
+}
+.lssvg-fullscreen {
+	background: url("svg.svg") 96.36363636363636% 90.3225806451613% no-repeat;
+	width: 12px;
+	height: 12px;
+}
+.lssvg-fullscreen-hover {
+	background: url("svg.svg") 30.90909090909091% 48.38709677419355% no-repeat;
+	width: 12px;
+	height: 12px;
+}
+.lssvg-hang-call {
+	background: url("svg.svg") 70.58823529411765% 40.54054054054054% no-repeat;
+	width: 16px;
+	height: 6px;
+}
+.lssvg-mute-disabled {
+	background: url("svg.svg") 32.075471698113205% 100% no-repeat;
+	width: 14px;
+	height: 15px;
+}
+.lssvg-mute-disabled-hover {
+	background: url("svg.svg") 58.490566037735846% 100% no-repeat;
+	width: 14px;
+	height: 15px;
+}
+.lssvg-screenshare {
+	background: url("svg.svg") 100% 48.275862068965516% no-repeat;
+	width: 14px;
+	height: 14px;
+}
+.lssvg-screenshare-hover {
+	background: url("svg.svg") 100% 0 no-repeat;
+	width: 14px;
+	height: 14px;
+}
+</style>
 
-    nav a:hover {
-        text-decoration: underline
-    }
+<!--
+====================================================================================================
+-->
 
-    nav a.current {
-        font-weight: bold;
-        text-decoration: underline;
-        color: #666
-    }
+	</head>
+	<body>
+		<header>
+			<h1>SVG CSS sprite preview</h1>
+			<p>This preview features the generated SVG file as a conventional CSS sprite. The shapes are displayed as background images of several <code>&lt;i&gt;</code> elements.</p>
+		</header>
+		<section>
 
-    section {
-        border-top: 1px solid #eee;
-        padding: 2em 3em 0 3em
-    }
+<!--
 
-    ul {
-        margin: 0;
-        padding: 0
-    }
+Conventional CSS sprite
+====================================================================================================
+This technique uses CSS classes to display portions of the sprite as background image of
+appropriately sized elements.
 
-    .icon-boxes li {
-        display: inline-block;
-        background-color: #fff;
-        position: relative;
-        margin: 0 2em 2em 0;
-        vertical-align: top;
-        border: 1px solid #ccc;
-        padding: 1em 1em 1em 1em;
-        cursor: default
-    }
+-->
 
-    .icon-box {
-        margin: 0;
-        width: 144px;
-        height: 144px;
-        position: relative;
-        background: #ccc url(data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=) top left repeat;
-        border: 1px solid #ccc;
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center
-    }
-    .icon-box.inverted {
-        background: black;
-    }
+			<ul>
+				<li title="btn-video-icon">
+					<div class="icon-box">
 
-    .icon {
-        display: inline;
-        display: inline-block
-    }
+						<!-- btn-video-icon -->
+						<i class="lssvg-btn-video-icon">btn-video-icon</i>
 
-    .snippet-popover {
-        position: absolute;
-        display: none;
-        opacity: 0;
-        bottom: 0;
-        left: 0;
-        background: white;
-        border: 1px solid #ccc;
-        padding: 16px;
-        z-index: 1;
-        transition: all .3s;
-    }
-    .snippet-popover.active {
-        display: block;
-        opacity: 1;
-    }
+					</div>
+					<h2>btn-video-icon</h2>
+				</li>
+				<li title="camera-disabled">
+					<div class="icon-box">
 
-    pre {
-        margin: 0;
-        margin-bottom: 20px;
-    }
+						<!-- camera-disabled -->
+						<i class="lssvg-camera-disabled">camera-disabled</i>
 
-    h2 {
-        margin: 0;
-        padding: 5px 0;
-        font-size: 1em;
-        font-weight: normal;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+					</div>
+					<h2>camera-disabled</h2>
+				</li>
+				<li title="camera-disabled-hover">
+					<div class="icon-box">
 
-    h4 {
-        margin: 0;
-    }
+						<!-- camera-disabled-hover -->
+						<i class="lssvg-camera-disabled-hover">camera-disabled-hover</i>
 
-    footer {
-        display: block;
-        margin: 0;
-        padding: 0 3em 3em 3em
-    }
+					</div>
+					<h2>camera-disabled-hover</h2>
+				</li>
+				<li title="chat-bubble">
+					<div class="icon-box">
 
-    footer p {
-        margin: 0;
-        font-size: .7em
-    }
+						<!-- chat-bubble -->
+						<i class="lssvg-chat-bubble">chat-bubble</i>
 
-    footer a {
-        color: #0f7595;
-        margin-left: 0
-    }
-    </style>
-</head>
-<body>
-<header>
-    <h1 id="logo">Gulp SVG Sprites</h1>
-    <h4>Files Generated:</h4>
-    <ol>
-        <li><a href="css/sprite.css">css/sprite.css</a></li>
-        <li><a href="svg.svg">svg.svg</a></li>
-    </ol>
-    <h4>Usage:</h4>
-    <ol>
-        <li>
-            Include the <a href="css/sprite.css">CSS file</a> into your project.
-        </li>
-        <li>
-            Paste one of the snippets anywhere into your website.
-        </li>
-    </ol>
-</header>
-<section>
-    <nav><button onclick="toggleMode()">Toggle PNG/SVG</button> (showing <span id="mode-view">SVG</span>)<br><br><input type="range" onchange="setSize(this.value)" min="2" max="14"></nav>
-    <ul class="icon-boxes">
+					</div>
+					<h2>chat-bubble</h2>
+				</li>
+				<li title="chat-bubble-hover">
+					<div class="icon-box">
 
+						<!-- chat-bubble-hover -->
+						<i class="lssvg-chat-bubble-hover">chat-bubble-hover</i>
 
+					</div>
+					<h2>chat-bubble-hover</h2>
+				</li>
+				<li title="fullscreen">
+					<div class="icon-box">
 
-      
+						<!-- fullscreen -->
+						<i class="lssvg-fullscreen">fullscreen</i>
 
-        <li title="lssvg-btn-video-icon">
-            <div class="icon-box" id="icon-box-lssvg-btn-video-icon">
-                <div class="icon lssvg-btn-video-icon"></div>
-            </div>
-            <h2>lssvg-btn-video-icon</h2>
-            <button onclick="showPopover('snippet-lssvg-btn-video-icon')">Show Snippet</button>
-            <br/>
-            <button onclick="invertBackground('icon-box-lssvg-btn-video-icon')">Invert Background</button>
-            <div class="snippet-popover" id="snippet-lssvg-btn-video-icon">
-                <pre><code>&lt;span class=&quot;icon lssvg-btn-video-icon&quot;&gt;&lt;/span&gt;</code></pre>
-                <button onclick="hidePopover()">Close</button>
-            </div>
-        </li>
+					</div>
+					<h2>fullscreen</h2>
+				</li>
+				<li title="fullscreen-hover">
+					<div class="icon-box">
 
+						<!-- fullscreen-hover -->
+						<i class="lssvg-fullscreen-hover">fullscreen-hover</i>
 
-      
+					</div>
+					<h2>fullscreen-hover</h2>
+				</li>
+				<li title="hang-call">
+					<div class="icon-box">
 
-        <li title="lssvg-camera-disabled">
-            <div class="icon-box" id="icon-box-lssvg-camera-disabled">
-                <div class="icon lssvg-camera-disabled"></div>
-            </div>
-            <h2>lssvg-camera-disabled</h2>
-            <button onclick="showPopover('snippet-lssvg-camera-disabled')">Show Snippet</button>
-            <br/>
-            <button onclick="invertBackground('icon-box-lssvg-camera-disabled')">Invert Background</button>
-            <div class="snippet-popover" id="snippet-lssvg-camera-disabled">
-                <pre><code>&lt;span class=&quot;icon lssvg-camera-disabled&quot;&gt;&lt;/span&gt;</code></pre>
-                <button onclick="hidePopover()">Close</button>
-            </div>
-        </li>
+						<!-- hang-call -->
+						<i class="lssvg-hang-call">hang-call</i>
 
+					</div>
+					<h2>hang-call</h2>
+				</li>
+				<li title="mute-disabled">
+					<div class="icon-box">
 
-      
+						<!-- mute-disabled -->
+						<i class="lssvg-mute-disabled">mute-disabled</i>
 
-        <li title="lssvg-camera-disabled-hover">
-            <div class="icon-box" id="icon-box-lssvg-camera-disabled-hover">
-                <div class="icon lssvg-camera-disabled-hover"></div>
-            </div>
-            <h2>lssvg-camera-disabled-hover</h2>
-            <button onclick="showPopover('snippet-lssvg-camera-disabled-hover')">Show Snippet</button>
-            <br/>
-            <button onclick="invertBackground('icon-box-lssvg-camera-disabled-hover')">Invert Background</button>
-            <div class="snippet-popover" id="snippet-lssvg-camera-disabled-hover">
-                <pre><code>&lt;span class=&quot;icon lssvg-camera-disabled-hover&quot;&gt;&lt;/span&gt;</code></pre>
-                <button onclick="hidePopover()">Close</button>
-            </div>
-        </li>
+					</div>
+					<h2>mute-disabled</h2>
+				</li>
+				<li title="mute-disabled-hover">
+					<div class="icon-box">
 
+						<!-- mute-disabled-hover -->
+						<i class="lssvg-mute-disabled-hover">mute-disabled-hover</i>
 
-      
+					</div>
+					<h2>mute-disabled-hover</h2>
+				</li>
+				<li title="screenshare">
+					<div class="icon-box">
 
-        <li title="lssvg-chat-bubble">
-            <div class="icon-box" id="icon-box-lssvg-chat-bubble">
-                <div class="icon lssvg-chat-bubble"></div>
-            </div>
-            <h2>lssvg-chat-bubble</h2>
-            <button onclick="showPopover('snippet-lssvg-chat-bubble')">Show Snippet</button>
-            <br/>
-            <button onclick="invertBackground('icon-box-lssvg-chat-bubble')">Invert Background</button>
-            <div class="snippet-popover" id="snippet-lssvg-chat-bubble">
-                <pre><code>&lt;span class=&quot;icon lssvg-chat-bubble&quot;&gt;&lt;/span&gt;</code></pre>
-                <button onclick="hidePopover()">Close</button>
-            </div>
-        </li>
+						<!-- screenshare -->
+						<i class="lssvg-screenshare">screenshare</i>
 
+					</div>
+					<h2>screenshare</h2>
+				</li>
+				<li title="screenshare-hover">
+					<div class="icon-box">
 
-      
+						<!-- screenshare-hover -->
+						<i class="lssvg-screenshare-hover">screenshare-hover</i>
 
-        <li title="lssvg-chat-bubble-hover">
-            <div class="icon-box" id="icon-box-lssvg-chat-bubble-hover">
-                <div class="icon lssvg-chat-bubble-hover"></div>
-            </div>
-            <h2>lssvg-chat-bubble-hover</h2>
-            <button onclick="showPopover('snippet-lssvg-chat-bubble-hover')">Show Snippet</button>
-            <br/>
-            <button onclick="invertBackground('icon-box-lssvg-chat-bubble-hover')">Invert Background</button>
-            <div class="snippet-popover" id="snippet-lssvg-chat-bubble-hover">
-                <pre><code>&lt;span class=&quot;icon lssvg-chat-bubble-hover&quot;&gt;&lt;/span&gt;</code></pre>
-                <button onclick="hidePopover()">Close</button>
-            </div>
-        </li>
+					</div>
+					<h2>screenshare-hover</h2>
+				</li>
+			</ul>
 
+<!--
+====================================================================================================
+-->
 
-      
-
-        <li title="lssvg-fullscreen">
-            <div class="icon-box" id="icon-box-lssvg-fullscreen">
-                <div class="icon lssvg-fullscreen"></div>
-            </div>
-            <h2>lssvg-fullscreen</h2>
-            <button onclick="showPopover('snippet-lssvg-fullscreen')">Show Snippet</button>
-            <br/>
-            <button onclick="invertBackground('icon-box-lssvg-fullscreen')">Invert Background</button>
-            <div class="snippet-popover" id="snippet-lssvg-fullscreen">
-                <pre><code>&lt;span class=&quot;icon lssvg-fullscreen&quot;&gt;&lt;/span&gt;</code></pre>
-                <button onclick="hidePopover()">Close</button>
-            </div>
-        </li>
-
-
-      
-
-        <li title="lssvg-fullscreen-hover">
-            <div class="icon-box" id="icon-box-lssvg-fullscreen-hover">
-                <div class="icon lssvg-fullscreen-hover"></div>
-            </div>
-            <h2>lssvg-fullscreen-hover</h2>
-            <button onclick="showPopover('snippet-lssvg-fullscreen-hover')">Show Snippet</button>
-            <br/>
-            <button onclick="invertBackground('icon-box-lssvg-fullscreen-hover')">Invert Background</button>
-            <div class="snippet-popover" id="snippet-lssvg-fullscreen-hover">
-                <pre><code>&lt;span class=&quot;icon lssvg-fullscreen-hover&quot;&gt;&lt;/span&gt;</code></pre>
-                <button onclick="hidePopover()">Close</button>
-            </div>
-        </li>
-
-
-      
-
-        <li title="lssvg-hang-call">
-            <div class="icon-box" id="icon-box-lssvg-hang-call">
-                <div class="icon lssvg-hang-call"></div>
-            </div>
-            <h2>lssvg-hang-call</h2>
-            <button onclick="showPopover('snippet-lssvg-hang-call')">Show Snippet</button>
-            <br/>
-            <button onclick="invertBackground('icon-box-lssvg-hang-call')">Invert Background</button>
-            <div class="snippet-popover" id="snippet-lssvg-hang-call">
-                <pre><code>&lt;span class=&quot;icon lssvg-hang-call&quot;&gt;&lt;/span&gt;</code></pre>
-                <button onclick="hidePopover()">Close</button>
-            </div>
-        </li>
-
-
-      
-
-        <li title="lssvg-mute-disabled">
-            <div class="icon-box" id="icon-box-lssvg-mute-disabled">
-                <div class="icon lssvg-mute-disabled"></div>
-            </div>
-            <h2>lssvg-mute-disabled</h2>
-            <button onclick="showPopover('snippet-lssvg-mute-disabled')">Show Snippet</button>
-            <br/>
-            <button onclick="invertBackground('icon-box-lssvg-mute-disabled')">Invert Background</button>
-            <div class="snippet-popover" id="snippet-lssvg-mute-disabled">
-                <pre><code>&lt;span class=&quot;icon lssvg-mute-disabled&quot;&gt;&lt;/span&gt;</code></pre>
-                <button onclick="hidePopover()">Close</button>
-            </div>
-        </li>
-
-
-      
-
-        <li title="lssvg-mute-disabled-hover">
-            <div class="icon-box" id="icon-box-lssvg-mute-disabled-hover">
-                <div class="icon lssvg-mute-disabled-hover"></div>
-            </div>
-            <h2>lssvg-mute-disabled-hover</h2>
-            <button onclick="showPopover('snippet-lssvg-mute-disabled-hover')">Show Snippet</button>
-            <br/>
-            <button onclick="invertBackground('icon-box-lssvg-mute-disabled-hover')">Invert Background</button>
-            <div class="snippet-popover" id="snippet-lssvg-mute-disabled-hover">
-                <pre><code>&lt;span class=&quot;icon lssvg-mute-disabled-hover&quot;&gt;&lt;/span&gt;</code></pre>
-                <button onclick="hidePopover()">Close</button>
-            </div>
-        </li>
-
-
-      
-
-        <li title="lssvg-screenshare">
-            <div class="icon-box" id="icon-box-lssvg-screenshare">
-                <div class="icon lssvg-screenshare"></div>
-            </div>
-            <h2>lssvg-screenshare</h2>
-            <button onclick="showPopover('snippet-lssvg-screenshare')">Show Snippet</button>
-            <br/>
-            <button onclick="invertBackground('icon-box-lssvg-screenshare')">Invert Background</button>
-            <div class="snippet-popover" id="snippet-lssvg-screenshare">
-                <pre><code>&lt;span class=&quot;icon lssvg-screenshare&quot;&gt;&lt;/span&gt;</code></pre>
-                <button onclick="hidePopover()">Close</button>
-            </div>
-        </li>
-
-
-      
-
-        <li title="lssvg-screenshare-hover">
-            <div class="icon-box" id="icon-box-lssvg-screenshare-hover">
-                <div class="icon lssvg-screenshare-hover"></div>
-            </div>
-            <h2>lssvg-screenshare-hover</h2>
-            <button onclick="showPopover('snippet-lssvg-screenshare-hover')">Show Snippet</button>
-            <br/>
-            <button onclick="invertBackground('icon-box-lssvg-screenshare-hover')">Invert Background</button>
-            <div class="snippet-popover" id="snippet-lssvg-screenshare-hover">
-                <pre><code>&lt;span class=&quot;icon lssvg-screenshare-hover&quot;&gt;&lt;/span&gt;</code></pre>
-                <button onclick="hidePopover()">Close</button>
-            </div>
-        </li>
-
-
-      
-
-    </ul>
-</section>
-<footer>
-    <p>Generated by <a href="https://github.com/shakyshane/gulp-svg-sprites">Gulp Svg Sprites</a> - Preview page courtesy of <a href="http://iconizr.com" target="_blank">iconizr</a>.</p>
-</footer>
-
-<script type="text/javascript">
-
-    var openSnippet;
-    var modeView = document.getElementById("mode-view");
-    var icons = document.querySelectorAll(".icon");
-
-    function setSize (fontSize) {
-        for (var i = 0; i < icons.length; i++) {
-            icons[i].style.fontSize = fontSize + 'px';
-        }
-    }
-
-    function showPopover(id) {
-        openSnippet = document.getElementById(id);
-        openSnippet.classList.add("active");
-    }
-    function hidePopover() {
-
-        openSnippet.classList.remove("active");
-    }
-    function invertBackground(id) {
-        var elem = document.getElementById(id);
-        elem.classList.toggle("inverted");
-    }
-    function toggleMode() {
-        document.body.classList.toggle("no-svg") ?
-            modeView.innerHTML = "PNG" :
-            modeView.innerHTML = "SVG";
-    }
-</script>
-</body>
+		</section>
+		<footer>
+			<p>Generated at Fri, 27 Jan 2017 10:32:04 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+		</footer>
+	</body>
 </html>

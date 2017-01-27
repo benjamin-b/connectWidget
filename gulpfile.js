@@ -3,8 +3,10 @@ var gulp      = require('gulp'),
     sass      = require('gulp-sass'),
     cssmin    = require('gulp-cssmin'),
     uglify    = require('gulp-uglifyjs'),
-    svgSprite = require('gulp-svg-sprites');
+    //svgSprite = require('gulp-svg-sprites');
+    svgSprite = require('gulp-svg-sprite');
     rename    = require('gulp-rename');
+
 
 gulp.task('webserver', function() {
     connect.server({
@@ -12,19 +14,44 @@ gulp.task('webserver', function() {
       livereload: true
     });
 });
-gulp.task('sprites', function () {
+
+gulp.task('sprite', function () {
     return gulp.src('images/svg/*.svg')
-        .pipe(svgSprite({
-            selector: "lssvg-%f",
-            svg: {
-                sprite: "svg.svg"
-            },
-            preview: {
-                sprite: "index.html"
+    .pipe(svgSprite({
+        mode : {
+            css : {
+                bust : false,
+                dimensions : true,
+                example : {
+                    dest : '../index.html'
+                },
+                prefix : ".lssvg-",
+
+                render : {
+                    css     : {
+                        dest : 'sprite.css',
+                    }
+                },
+                sprite: '../svg.svg'
             }
-        }))
-        .pipe(gulp.dest("./svg/"));
+        }
+}))
+        .pipe(gulp.dest('svg/'));
 });
+
+// gulp.task('sprites', function () {
+//     return gulp.src('images/svg/*.svg')
+//         .pipe(svgSprite({
+//             selector: "lssvg-%f",
+//             svg: {
+//                 sprite: "svg.svg"
+//             },
+//             preview: {
+//                 sprite: "index.html"
+//             }
+//         }))
+//         .pipe(gulp.dest("./svg/"));
+// });
 gulp.task('sass', function () {
   gulp.src('./scss/main.scss')
     .pipe(sass().on('error', sass.logError))
@@ -54,4 +81,4 @@ gulp.task('watch',function(){
   gulp.watch(['scripts/*.js'],['script']);
 });
 
-gulp.task('default',['sass','html','script', 'webserver','watch', 'sprites']);
+gulp.task('default',['sass','html','script', 'webserver','watch', 'sprite']);

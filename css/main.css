@@ -115,6 +115,11 @@ body {
   -o-animation-direction: normal;
   animation-direction: normal; }
 
+.ls-widget-header:after, .ls-chat-transcript:after {
+  clear: both;
+  content: "";
+  display: block; }
+
 .ls-widget-wrapper {
   position: fixed;
   bottom: 20px;
@@ -138,16 +143,22 @@ body {
         display: none; }
       .ls-widget-wrapper.animate .ls-widget-content .ls-widget-footer {
         display: block; }
+  .ls-widget-wrapper.ls-enable-video .ls-widget-content .ls-widget-description .ls-welcome-content {
+    display: none; }
+  .ls-widget-wrapper.ls-enable-video .ls-profile-image {
+    display: none; }
+  .ls-widget-wrapper.ls-enable-video .ls-widget-header {
+    display: block; }
+  .ls-widget-wrapper.ls-enable-video .ls-chat-area {
+    display: block; }
+  .ls-widget-wrapper.ls-enable-video .ls-video-container {
+    display: block; }
 
 .ls-widget-header {
   width: 380px;
   height: 60px;
   background-color: #222830;
   display: none; }
-  .ls-widget-header:after {
-    clear: both;
-    display: block;
-    content: ""; }
   .ls-widget-header .ls-user-status, .ls-widget-header .ls-agent-name {
     margin: 0 0 0 15px; }
 
@@ -163,7 +174,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   color: #FFFFFF;
-  line-height: 60px; }
+  line-height: 60px;
+  cursor: auto; }
 
 .ls-header-right-controls {
   float: right; }
@@ -172,7 +184,14 @@ body {
     height: 30px;
     background-color: #FF6155;
     border-radius: 50%;
-    margin: 15px 15px 15px 20px; }
+    margin: 15px 15px 15px 20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center; }
+    .ls-header-right-controls .ls-icon-call .icon {
+      line-height: 25px;
+      display: inline-block;
+      vertical-align: -4px; }
 
 .ls-call-timer {
   font-weight: 500;
@@ -289,10 +308,25 @@ body {
     -webkit-background-size: 16px 6px;
     -moz-background-size: 16px 6px;
     -o-background-size: 16px 6px;
-    background-size: 16px 6px; }
+    background-size: 16px 6px;
+    vertical-align: middle; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
       .ls-icon.ls-icon-call {
         background-image: url("/images/hang-call_2x.png"); } }
+
+.icon {
+  display: inline-block;
+  vertical-align: -11px; }
+  .icon:hover.lssvg-mute-disabled, .icon.active.lssvg-mute-disabled {
+    background-position: 58.490566037735846% 100%; }
+  .icon:hover.lssvg-camera-disabled, .icon.active.lssvg-camera-disabled {
+    background-position: 0 0; }
+  .icon:hover.lssvg-screenshare, .icon.active.lssvg-screenshare {
+    background-position: 100% 0; }
+  .icon:hover.lssvg-fullscreen, .icon.active.lssvg-fullscreen {
+    background-position: 30.90909090909091% 48.38709677419355%; }
+  .icon:hover.lssvg-chat-bubble, .icon.active.lssvg-chat-bubble {
+    background-position: 0 100%; }
 
 @-webkit-keyframes pulse {
   0% {
@@ -357,8 +391,10 @@ body {
   .ls-btn.ls-btn-primary {
     background-color: #1D7ADF;
     border-radius: 100px 100px 74px 74px; }
-    .ls-btn.ls-btn-primary .ls-icon {
-      margin: 1px 5px 0 0; }
+    .ls-btn.ls-btn-primary .ls-icon, .ls-btn.ls-btn-primary .icon {
+      margin: 2px 5px 0 0;
+      display: inline-block;
+      vertical-align: top; }
 
 .ls-send-btn {
   text-transform: uppercase;
@@ -372,6 +408,10 @@ body {
   width: 380px;
   height: 300px;
   position: relative; }
+
+.ls-chat-content {
+  max-height: 170px;
+  overflow: auto; }
 
 .ls-chat-area {
   display: none; }
@@ -387,7 +427,47 @@ body {
     -webkit-user-select: none; }
 
 .ls-chat-area {
-  margin-bottom: 70px; }
+  margin: 0 0 55px; }
+
+.ls-chat-transcript > li {
+  list-style-type: none;
+  padding: 9px 0;
+  max-width: 280px;
+  float: right;
+  margin: 12.5px 20px 12.5px 0;
+  position: relative; }
+  .ls-chat-transcript > li:first-of-type {
+    margin-top: 0; }
+  .ls-chat-transcript > li > p {
+    line-height: 21px;
+    padding: 0 15px;
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: 400;
+    color: #39414D; }
+  .ls-chat-transcript > li.ls-client-script {
+    background: rgba(29, 122, 223, 0.08);
+    border-radius: 0 15px 0 15px; }
+  .ls-chat-transcript > li.ls-agent-script {
+    background: rgba(127, 134, 149, 0.1);
+    border-radius: 15px 0 15px 0;
+    float: left;
+    margin-left: 20px; }
+    .ls-chat-transcript > li.ls-agent-script .ls-agent-profile {
+      position: absolute;
+      top: 0;
+      right: -55px; }
+
+.ls-agent-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden; }
+  .ls-agent-profile > img {
+    max-width: initial;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .lsvideo-controls {
   background: rgba(34, 40, 48, 0.4);

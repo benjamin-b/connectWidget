@@ -1,40 +1,68 @@
 .ls-icon{
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-position: center;
-  background-repeat: no-repeat;
-  vertical-align: top;
-  &.ls-video{
-    @include background-image-retina('/images/icon-activity-aw-video-call', png, 13px, 9px);
-  }
-  &.ls-icon-call{
-  	@include background-image-retina('/images/hang-call', png, 16px, 6px);	
-  }
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    &.ls-video{
+        @include background-image-retina('/images/icon-activity-aw-video-call', png, 13px, 9px);
+    }
+    &.ls-icon-call{
+        @include background-image-retina('/images/hang-call', png, 16px, 6px);
+        vertical-align: middle;
+    }
 }
-
 
 .icon{
-  &:hover, &.active{
-    &.lssvg-mute-disabled{  
-      &:before{
-        background-position: 0em -8.8em;
-      }
+    display: inline-block;
+    vertical-align: -11px;
+    
+    &:hover, &.active{
+        &.lssvg-mute-disabled{
+            background-position: 58.490566037735846% 100%;
+        }
+        &.lssvg-camera-disabled{
+            background-position: 0 0;
+        }
+        &.lssvg-screenshare{
+            background-position: 100% 0;
+        }
+        &.lssvg-fullscreen{
+            background-position: 30.90909090909091% 48.38709677419355%;
+        }
+        &.lssvg-chat-bubble{
+            background-position: 0 100%;
+        }
     }
-    &.lssvg-camera-disabled{
-      &:before{
-        background-position: 0em -2.8em;
-      }
-    }
-    &.lssvg-screenshare{
-      &:before{
-        background-position: 0em -11.7em;
-      }
-    }
-    &.lssvg-fullscreen{
-      &:before{
-        background-position: 0em -5.5em;
-      }
-    }
-  }
 }
+
+// .icon{
+//   &:hover, &.active{
+//     &.lssvg-mute-disabled{
+//       &:before{
+//         background-position: 0em -11.8em;
+//       }
+//     }
+//     &.lssvg-camera-disabled{
+//       &:before{
+//         background-position: 0em -2.8em;
+//       }
+//     }
+//     &.lssvg-screenshare{
+//       &:before{
+//           background-position: 0em -14.7em;
+//       }
+//     }
+//     &.lssvg-fullscreen{
+//       &:before{
+//           background-position: 0em -8.5em;
+//       }
+//     }
+//     &.lssvg-chat-bubble{
+//         &:before{
+//             background-position: 0em -5.8em;
+//         }
+//     }
+//   }
+// }
