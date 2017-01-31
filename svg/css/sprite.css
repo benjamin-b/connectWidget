@@ -24,7 +24,7 @@
 
 .lssvg-chat-bubble-hover {
 	background: url("../svg.svg") 0 100% no-repeat;
-	width: 17px;
+	width: 16px;
 	height: 15px;
 }
 
@@ -47,13 +47,13 @@
 }
 
 .lssvg-mute-disabled {
-	background: url("../svg.svg") 32.075471698113205% 100% no-repeat;
+	background: url("../svg.svg") 30.18867924528302% 100% no-repeat;
 	width: 14px;
 	height: 15px;
 }
 
 .lssvg-mute-disabled-hover {
-	background: url("../svg.svg") 58.490566037735846% 100% no-repeat;
+	background: url("../svg.svg") 56.60377358490566% 100% no-repeat;
 	width: 14px;
 	height: 15px;
 }

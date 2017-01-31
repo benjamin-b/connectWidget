@@ -318,7 +318,7 @@ body {
   display: inline-block;
   vertical-align: -11px; }
   .icon:hover.lssvg-mute-disabled, .icon.active.lssvg-mute-disabled {
-    background-position: 58.490566037735846% 100%; }
+    background-position: 56.60377358490566% 100%; }
   .icon:hover.lssvg-camera-disabled, .icon.active.lssvg-camera-disabled {
     background-position: 0 0; }
   .icon:hover.lssvg-screenshare, .icon.active.lssvg-screenshare {
@@ -326,7 +326,7 @@ body {
   .icon:hover.lssvg-fullscreen, .icon.active.lssvg-fullscreen {
     background-position: 30.90909090909091% 48.38709677419355%; }
   .icon:hover.lssvg-chat-bubble, .icon.active.lssvg-chat-bubble {
-    background-position: 0 100%; }
+    background-position: -0.9999999702% 100%; }
 
 @-webkit-keyframes pulse {
   0% {
@@ -408,6 +408,15 @@ body {
   width: 380px;
   height: 300px;
   position: relative; }
+
+.ls-video-small {
+  width: 90px;
+  height: 65px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  left: 10px; }
 
 .ls-chat-content {
   max-height: 170px;
