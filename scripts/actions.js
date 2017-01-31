@@ -68,15 +68,26 @@ var loginPage = (function(w, d){
         }, 100);
     }
 
+    // Showing send btn
+    function showSendBtn(){
+        var sendBtn = widgetWrapper.querySelector('.ls-send-btn');
+        sendBtn.style.display = "block";
+    }
+
 
     // On load function
     window.onload = function() {
         widgetWrapper.classList.add("animate");
         animateDefaultText();
-        animateTextarea();
         setTimeout(function(){ 
             showCallBtn();
         }, 2500);
+        setTimeout(function(){ 
+            animateTextarea();
+        }, 3000);
+        setTimeout(function(){ 
+            showSendBtn();
+        }, 4000);
     };
 
 
